@@ -1,9 +1,12 @@
 cc_library(
     name = "imgui",
-    srcs = glob(["*.cpp"]),
+    srcs = glob([
+        "*.cpp",
+    ]) + ["backends/imgui_impl_glfw.cpp"],
     hdrs = glob([
         "*.h",
-    ]),
+    ]) + ["backends/imgui_impl_glfw.h"],
     includes = ["."],
     visibility = ["//visibility:public"],
+    deps = ["@glfw"],
 )

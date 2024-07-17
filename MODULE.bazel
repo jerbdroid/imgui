@@ -2,3 +2,5 @@ module(
     name = "imgui",
     version = "1.90.4",
 )
+
+bazel_dep(name = "glfw", version = "3.3.9")

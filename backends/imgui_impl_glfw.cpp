@@ -205,7 +205,7 @@ static void ImGui_ImplGlfw_SetClipboardText(void* user_data, const char* text)
     glfwSetClipboardString((GLFWwindow*)user_data, text);
 }
 
-static ImGuiKey ImGui_ImplGlfw_KeyToImGuiKey(int key)
+ImGuiKey ImGui_ImplGlfw_KeyToImGuiKey(int key)
 {
     switch (key)
     {

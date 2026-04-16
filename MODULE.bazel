@@ -4,3 +4,4 @@ module(
 )
 
 bazel_dep(name = "glfw", version = "3.3.9")
+bazel_dep(name = "rules_cc", version = "0.2.17")
